@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b7cbd1;
+    width: 100vw;
+}
+
+header{
+    background-color: #185f80;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+main{
+    min-height: 75vh;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"],
+button[type="submit"],
+.result a{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+form input[type="text"]{
+    flex-grow: 1;
+}
+form button[type="submit"]{
+    background-color: #185f80;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+form button[type="submit"]:hover{
+    background-color: #0f4c66; 
+}
+
+footer{
+    background-color: #185f80;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+}
+
+.result{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px royalblue;
+}
+
+
+
+.result h2{
+    margin-top: 10px;
+    color: rgb(21, 68, 138);
+}
+
+.result p{
+    margin-top: 10px;
+}
+
+.result p[class="partOfSpeech"]{
+    margin-top: 2px;
+    font-style: italic;
+    color: #0f4c66;
+}
+
+.result a {
+    text-decoration: none;
+    background-color: #185f80; 
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s; 
+}
+
+.result a:hover {
+    background-color: #0f4c66;
+}
+
+
+.result li{
+    padding: 4px;
+    margin-left: 20px;
+}
+
+#sound {
+    background: none; 
+    border: none;
+    cursor: pointer;
+}
+
+#sound img {
+    padding: 1px;
+    width: 24px; 
+    height: auto;
+}
+
+@media screen and (max-width: 320px) {
+    main form{
+        flex-direction: column;
+    }
+    form button[type='submit']{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    footer {
+        font-size: 18px;
+        padding: 15px; 
+    }
+}
